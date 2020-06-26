@@ -8,16 +8,16 @@
 
     <ImageView
         android:id="@+id/ivBackdrop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="416dp"
+        android:layout_height="234dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:onClick="onClick"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
         android:clickable="true"
+        android:onClick="onClick"
         app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 
     <TextView
@@ -30,10 +30,10 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="341dp"
-        android:layout_marginRight="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginRight="299dp"
         android:text="Movie Title"
         android:textAppearance="@android:style/TextAppearance.Large" />
 
@@ -41,11 +41,16 @@
         android:id="@+id/tvOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rbVoteAverage"
+        android:layout_below="@+id/rbVoteAverage"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="10dp"
         android:text="TextView" />
 
     <RatingBar
@@ -53,19 +58,34 @@
         style="@style/Widget.AppCompat.RatingBar.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
         android:numStars="5"
-        android:stepSize="0.5" />
+        android:stepSize=".5" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="243dp"
-        android:layout_height="69dp"
+        android:id="@+id/ivPlayButton"
+        android:layout_width="105dp"
+        android:layout_height="76dp"
+        android:layout_alignBottom="@+id/ivBackdrop"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp"
-        app:srcCompat="@drawable/yt_play_button" />
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="134dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvVoteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="269dp"
+        android:text="TextView" />
 
 </RelativeLayout>

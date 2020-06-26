@@ -36,6 +36,7 @@ public class MovieDetailsActivity extends AppCompatActivity implements ImageView
     TextView tvOverview;
     RatingBar rbVoteAverage;
     ImageView backdrop;
+    ImageView ivPlayButton;
 
     // Youtube Video key
     String videoId;
@@ -56,7 +57,7 @@ public class MovieDetailsActivity extends AppCompatActivity implements ImageView
         tvOverview = binding.tvOverview; //(TextView) findViewById(R.id.tvOverview);
         rbVoteAverage = binding.rbVoteAverage; //(RatingBar) findViewById(R.id.rbVoteAverage);
         backdrop = binding.ivBackdrop; //(ImageView) findViewById(R.id.ivBackdrop);
-        // unwrap the movie passed in via intent, using its simple name as a key
+        ivPlayButton = binding.ivPlayButton;
 
 
         // set the title and overview
@@ -69,6 +70,11 @@ public class MovieDetailsActivity extends AppCompatActivity implements ImageView
         String imageUrl = movie.getBackdropPath();
         int placeholder = R.drawable.flicks_backdrop_placeholder;
         Glide.with(this).load(imageUrl).transform(new RoundedCorners(2)).placeholder(placeholder).into(backdrop);
+        //Glide.with(this).load(R.drawable.yt_play_button).into(ivPlayButton);
+        if(movie.getId()!=null){
+            Log.i("myapp", "here");
+            Glide.with(this).load(R.drawable.yt_play_button).into(ivPlayButton);
+        }
 
 
     }
