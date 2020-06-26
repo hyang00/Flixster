@@ -33,31 +33,7 @@ public class MovieTrailerActivity extends YouTubeBaseActivity {
         // temporary test video id -- TODO replace with movie trailer video id
         //final String videoId = "tKodtNFpzBA";
         videoId = getIntent().getStringExtra("videoId");
-        /*AsyncHttpClient client = new AsyncHttpClient();
-        String url = String.format("https://api.themoviedb.org/3/movie/%d/videos?api_key=1d7e1b5d130a0ec5165440f04213bcc3&language=en-US", movieId);
-        Log.i("myapp", url);
-        Log.i("myapp", Integer.toString(movieId));
-        // making a network request
-        client.get(url, new JsonHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Headers headers, JSON json) {
-                JSONObject jsonObject = json.jsonObject;
-                try {
-                    JSONArray results = jsonObject.getJSONArray("results");
-                    Log.i("myapp", "Results: " + results.toString());
-                    videoId = results.getJSONObject(0).getString("key");
-                    Log.i("myapp", "key: " + videoId);
-                } catch (JSONException e) {
-                    Log.e("myapp", "Hit Json exception", e);
-                }
-            }
 
-            @Override
-            public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-                Log.i("myapp", "onFailure", throwable);
-            }
-        });*/
-        Log.i("myapp", "key: " + videoId);
         // resolve the player view from the layout
         YouTubePlayerView playerView = (YouTubePlayerView) findViewById(R.id.player);
         // initialize with API key stored in secrets.xml
