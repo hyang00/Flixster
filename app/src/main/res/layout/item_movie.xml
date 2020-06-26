@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:outlineProvider="none">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -11,20 +13,24 @@
         android:layout_height="180dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="277dp"
-        android:layout_height="40dp"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="4dp"
-        android:layout_toEndOf="@+id/ivPoster"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/ivPoster"
+        android:background="@color/colorPrimaryDark"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         tools:text="Wasp Network" />
 
@@ -36,6 +42,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:maxLines="8"
+        android:maxLines="7"
+        android:textColor="#FFFFFF"
         tools:text="Havana, Cuba, 1990. René González, an airplane pilot, unexpectedly flees the country, leaving behind his wife Olga and his daughter Irma, and begins a new life in Miami, where he becomes a member of an anti-Castro organization." />
 </RelativeLayout>

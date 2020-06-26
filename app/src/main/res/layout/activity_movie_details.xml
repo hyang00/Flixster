@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MovieDetailsActivity">
 
     <ImageView
@@ -35,7 +36,8 @@
         android:layout_marginTop="239dp"
         android:layout_marginRight="299dp"
         android:text="Movie Title"
-        android:textAppearance="@android:style/TextAppearance.Large" />
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tvOverview"
@@ -51,7 +53,8 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="9dp"
         android:layout_marginRight="10dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#FFFFFF" />
 
     <RatingBar
         android:id="@+id/rbVoteAverage"
@@ -86,6 +89,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="89dp"
         android:layout_marginTop="269dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
