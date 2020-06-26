@@ -37,6 +37,7 @@ public class MovieDetailsActivity extends AppCompatActivity implements ImageView
     RatingBar rbVoteAverage;
     ImageView backdrop;
     ImageView ivPlayButton;
+    TextView tvVoteCount;
 
     // Youtube Video key
     String videoId;
@@ -58,11 +59,13 @@ public class MovieDetailsActivity extends AppCompatActivity implements ImageView
         rbVoteAverage = binding.rbVoteAverage; //(RatingBar) findViewById(R.id.rbVoteAverage);
         backdrop = binding.ivBackdrop; //(ImageView) findViewById(R.id.ivBackdrop);
         ivPlayButton = binding.ivPlayButton;
+        tvVoteCount = binding.tvVoteCount;
 
 
         // set the title and overview
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
+        tvVoteCount.setText(Integer.toString(movie.getVoteCount()) + " votes");
 
         // vote average is 0..10, convert to 0..5 by dividing by 2
         float voteAverage = movie.getVoteAverage().floatValue();

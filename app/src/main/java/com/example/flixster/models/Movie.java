@@ -17,6 +17,7 @@ public class Movie {
     String overview;
     Double voteAverage;
     Integer id;
+    Integer voteCount;
 
     public Movie() {}
 
@@ -27,6 +28,7 @@ public class Movie {
         overview = jsonObject.getString("overview");
         voteAverage = jsonObject.getDouble("vote_average");
         id = jsonObject.getInt("id");
+        voteCount = jsonObject.getInt("vote_count");
     }
 
     // converts json array of movies into list of movie objects
@@ -58,4 +60,8 @@ public class Movie {
     public Double getVoteAverage() { return voteAverage; }
 
     public Integer getId() { return id; }
+
+    public Integer getVoteCount() {
+        return voteCount;
+    }
 }
