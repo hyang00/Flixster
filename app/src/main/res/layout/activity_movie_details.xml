@@ -74,8 +74,8 @@
         android:layout_alignBottom="@+id/ivBackdrop"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="131dp"
-        android:layout_marginBottom="134dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="80dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView

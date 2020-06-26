@@ -65,7 +65,7 @@ public class MovieDetailsActivity extends AppCompatActivity implements ImageView
         // set the title and overview
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
-        tvVoteCount.setText(Integer.toString(movie.getVoteCount()) + " votes");
+        tvVoteCount.setText("" + movie.getVoteCount()+ " votes");
 
         // vote average is 0..10, convert to 0..5 by dividing by 2
         float voteAverage = movie.getVoteAverage().floatValue();
