@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=1d7e1b5d130a0ec5165440f04213bcc3";
     public static final String TAG = "MainActivity";
     List<Movie> movies;
-    private
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
